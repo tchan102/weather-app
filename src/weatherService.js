@@ -1,4 +1,4 @@
-const API_KEY = 'YOURAPIKEY';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const makeIconURL = (iconId) => `https://openweathermap.org/img/wn/${iconId}@2x.png`
 const getFormattedWeatherData = async (city, units = 'metric') => {
